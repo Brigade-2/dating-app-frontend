@@ -1,14 +1,17 @@
-import css from './Navbar.module.css'
 import {NavLink} from "react-router-dom";
+import  './Navbar.css' //пофиксить модули
 
 
 const Navbar = () => {
     return(
-        <div className={css.Navbar}>
-            <NavLink to ='/search'>Поиск анкет</NavLink>
-            <NavLink to =''>Chat</NavLink>
-            <NavLink to ='/'>Mоя анкета</NavLink>
-        </div>
+        <nav className = "navMenu">
+            <div className='link'>
+                <NavLink to ='/search'>Поиск анкет</NavLink>
+                <NavLink to ='/match'>Match</NavLink>
+                <NavLink to ='/profile'>Mоя анкета</NavLink>
+            </div>
+            <div className="dot"/>
+        </nav>
     )
 }
 

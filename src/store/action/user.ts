@@ -3,15 +3,15 @@ import {UserAction, UserActionTypes} from "../../types/userFormat";
 import axios from "axios";
 
 
-const FetchUser = () => {
+export const FetchUser = () => {
     return async (dispatch: Dispatch<UserAction>) => {
         try {
             dispatch({type: UserActionTypes.FETCH_USERS})
-            const responce = await axios.get('http://fedyaisbetterthanlehaatitstuff.duckdns.org:3000/user')
-            console.log(responce.data)
+            const response = await axios.get('http://localhost:3002/user')
+            dispatch({type: UserActionTypes.FETCH_USERS_SUCCESS, payload: response.data})
         }
         catch (e){
-
+            dispatch({type: UserActionTypes.FETCH_USERS_ERROR, payload: "Ошибка со стороны сервера"})
         }
     }
 }

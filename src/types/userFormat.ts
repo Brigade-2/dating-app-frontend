@@ -1,7 +1,8 @@
 import {user} from './user'
 
 export interface UserState{
-    user: Array<user> | []
+    user: {
+        users: Array<user>}
     loading: boolean
     error: string | null
 }
@@ -23,7 +24,7 @@ interface FetchUsersAction {
 
 interface FetchUserSuccessAction {
     type: UserActionTypes.FETCH_USERS_SUCCESS,
-    payload: Array<any>
+    payload: {users: Array<user>}
 }
 
 interface FetchUsersErrorAction {

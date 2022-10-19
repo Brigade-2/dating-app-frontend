@@ -1,9 +1,8 @@
 import {UserAction, UserActionTypes, UserState} from "../../types/userFormat";
 
 
-
 const initialState: UserState = {
-    user: [],
+    user: {users:[]},
     loading: false,
     error: null
 }
