@@ -1,0 +1,49 @@
+.filterContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.tag_container {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 30px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+
+.tag {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    height: 25px;
+    margin: 2px 5px 2px 0;
+    color: black;
+}
+
+.tag_container input {
+    border: none;
+    flex: 1;
+    outline: none;
+    padding: 5px;
+    background: white;
+    color: black;
+}
+.tag span {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.FilterButton{
+    background-color: white;
+    border: black 1px solid;
+    border-radius: 5px;
+    height: 30px;
+    width: 150px;
+    margin: 10px 15px;
+}
