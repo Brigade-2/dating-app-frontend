@@ -1,0 +1,45 @@
+.imgContainer{
+    position: relative;
+}
+
+
+.imgContainer h1{
+    color: white;
+    border-radius: 2px;
+    position: absolute;
+    right: 10px;
+    bottom: 22px;
+    text-transform: uppercase;
+
+}
+
+
+.imgContainer h2{
+    color: white;
+    border-radius: 2px;
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+
+}
+
+
+.imgContainer{
+    display:inline-block;
+    margin: 0 5% 2%;
+    width: 550px;
+    height: 550px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* W3C */
+}
+
+.imgContainer a img{
+    margin: 0;
+    object-fit: cover;
+    width: 550px;
+    height: 550px;
+    position:relative;
+    z-index:-1;
+    display:block;
+    box-shadow: 0 10px 30px 5px rgba(0, 0, 0, .2);
+
+}

@@ -1,0 +1,38 @@
+.NavbarMatch{
+    display: block;
+    width: 25%;
+    min-width: 300px;
+    border-right: white 2px solid ;
+}
+
+
+:root {
+    --primary-color: #D96AA7;
+    --secondary-color: #422C73;
+
+}
+
+.container {
+    background: #191919;
+    min-height: 100vh;
+    font-family: Montserrat, sans-serif;
+}
+
+.NavbarMatch a {
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+}
+
+.NavbarMatch {
+    left: 0;
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background: var(--secondary-color);
+    color:white;
+}

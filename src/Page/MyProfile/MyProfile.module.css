@@ -1,0 +1,90 @@
+.Profile{
+  position: relative;
+  margin: 1.5%
+}
+
+.imgContainer{
+  display: flex;
+  justify-content: center;
+  flex-wrap:wrap;
+  margin: 3% 2%;
+}
+
+h1{
+  color: black;
+  text-align: center;
+}
+
+.imgContainer img{
+  width: 570px;
+  height: 570px;
+}
+
+.imgPreview{
+
+}
+
+.imgContainerGallery{
+  padding-left: 30px ;
+  margin: 0 3%;
+  display: grid;
+  gap: 10px;
+  height: 600px;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  justify-content: center;
+
+}
+
+.imgContainerGallery img{
+  width: 180px;
+  height: 180px;
+}
+
+.imgContainerGallery span{
+  width: 180px;
+  height: 180px;
+  text-align: center;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, .2);
+}
+
+.addImg img{
+  padding-top: 25%;
+  width: 50%;
+  height: 50%;
+}
+
+.imgContainerGallery span:hover{
+  cursor: pointer;
+}
+
+.editProfileButton{
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.editProfileButton a{
+  color: black;
+  text-decoration: none
+}
+
+.logoutButton{
+  position: absolute;
+  right: 20px;
+  bottom: 15px;
+}
+
+.Profile button{
+  background-color: transparent;
+  width: 100px;
+  height: 40px;
+  border: black 2px solid;
+}
+
+.Profile button:hover{
+  font-size: 15px;
+  border: black 4px solid;
+  cursor: pointer;
+}

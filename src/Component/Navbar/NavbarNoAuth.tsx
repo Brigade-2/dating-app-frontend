@@ -1,15 +1,14 @@
 import {NavLink} from "react-router-dom";
-import './Navbar.css' //пофиксить модули
+import css from './Navbar.module.css' //пофиксить модули
 
 
 const NavbarNoAuth = () => {
     return (
-        <nav className="navMenu navMenuNoActive">
-            <div className='link'>
-                <NavLink to='/' className='itemLeftHref'>About</NavLink>
+        <nav className={`${css.navMenu} ${css.navMenuNoActive}`}>
+            <div className={css.link}>
+                <NavLink to='/' className={css.itemLeftHref}>About</NavLink>
                 <NavLink to='/login'>login</NavLink>
             </div>
-            <div className="dot"/>
         </nav>
     )
 }

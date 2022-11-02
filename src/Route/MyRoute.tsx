@@ -1,12 +1,14 @@
-import {NavLink, Routes, Route, useNavigate} from "react-router-dom";
+import {Navigate, Routes, Route, useNavigate} from "react-router-dom";
 import MyLogin from "../Page/Login/Login";
-import MyProfile from "../Page/MyProfile";
+import MyProfile from "../Page/MyProfile/MyProfile";
 import FindUser from "../Page/FindUser/findUser";
-import Match from "../Page/Match";
-import {useTypeSelector} from "../hoook/useTypeSelector";
+import Match from "../Page/Match/Match";
+import {useTypeSelector} from "../Hoook/useTypeSelector";
 import Navbar from "../Component/Navbar/Navbar";
 import NavbarNoAuth from "../Component/Navbar/NavbarNoAuth";
 import StartPage from "../Page/StartPage/startPage";
+import Edit from "../Page/Edit/Edit";
+import Registrate from "../Page/Registrate/Registrate";
 
 
 const MyRoute = () => {
@@ -19,8 +21,9 @@ const MyRoute = () => {
                         <Navbar/>
                         <Routes>
                             <Route path='/'>
-                                <Route path='login' element={<MyProfile/>}/>      //редирект
+                                <Route path='login' element={<Navigate to="/profile"/>}/>
                                 <Route path='profile' element={<MyProfile/>}/>
+                                <Route path='edit' element={<Edit/>}/>
                                 <Route path='search' element={<FindUser/>}/>
                                 <Route path='match' element={<Match/>}/>
                             </Route>
@@ -31,6 +34,7 @@ const MyRoute = () => {
                         <NavbarNoAuth/>
                         <Routes>
                             <Route path='/'>
+                                <Route path='registration' element={<Registrate/>}/>
                                 <Route path='login' element={<MyLogin/>}/>
                                 <Route path='/' element={<StartPage/>}/>
                                 <Route path='*' element={<StartPage/>}/>

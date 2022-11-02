@@ -1,0 +1,12 @@
+.Match{
+    display: flex;
+}
+
+.Content{
+    margin: 5%;
+}
+
+.Content h1{
+    font-size: 30px;
+    margin-top: 15%;
+}

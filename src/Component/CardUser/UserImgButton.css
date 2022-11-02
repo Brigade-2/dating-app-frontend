@@ -1,0 +1,61 @@
+.arrow {
+    -webkit-appearance: none;
+    background: transparent;
+    border: 0;
+    outline:0;
+}
+
+.left {
+    left: 42%;
+
+}
+
+.right {
+    left: 58%;
+}
+
+.left:hover polyline,
+.left:focus polyline {
+    stroke-width: 4;
+    cursor: pointer;
+}
+
+.left:active polyline {
+    stroke-width: 6;
+    transition: all 100ms ease-in-out;
+}
+
+
+.right:hover,
+.left:hover{
+    cursor: pointer;
+}
+
+.right:hover polyline,
+.right:focus polyline {
+    stroke-width: 3;
+
+}
+
+.right:active polyline {
+    stroke-width: 6;
+    transition: all 100ms ease-in-out;
+}
+
+polyline {
+    transition: all 250ms ease-in-out;
+    stroke-width: 3;
+    stroke: #000000;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none
+}
+
+/*.polylineLeft{*/
+/*    fill: none;*/
+/*    stroke: #000000;*/
+/*    stroke-width: 1;*/
+/*    stroke-linecap: round;*/
+/*    stroke-linejoin: round;*/
+/*    points: 45.63,75.8 0.375,38.087 45.63,0.375*/
+/*}*/
